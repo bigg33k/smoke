@@ -1,0 +1,836 @@
+*** Targets ***
+
+probe = FPing
+
+menu = Top
+title = Network Latency Grapher
+remark = Go Away. You are not authorized.
+
+
++Local-DNS
+menu = Local DNS 
+title = DNS Performance
+
+probe = DNS
+host = pi.bigg33k.net
+#lookup = pi.bigg33k.net
+pings = 5
+server = 192.168.1.91
+
++Remote-DNS
+menu = Remote DNS 
+title = DNS Performance
+
+probe = DNS
+
+++ns1147
+
+host = ns1147.dns.dyn.com
+lookup = pi.bigg33k.net
+pings = 5
+server = ns1147.dns.dyn.com
+
+++ns3152
+
+host =  ns3152.dns.dyn.com
+lookup = pi.bigg33k.net
+pings = 5
+server = ns3152.dns.dyn.com
+
+++ns2162
+
+host = ns2162.dns.dyn.com
+lookup = pi.bigg33k.net
+pings = 5
+server = ns2162.dns.dyn.com
+
+++ns4149
+
+host = ns4149.dns.dyn.com
+lookup = pi.bigg33k.net
+pings = 5
+server = ns4149.dns.dyn.com
+
++TrafficMgtDNS
+menu = Managed DNS 
+title = DNS Performance
+
+probe = DNS
+
+++ns1
+
+host = ns1.p29.dynect.net
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = ns1.p29.dynect.net
+
+++ns2
+
+host = ns2.p29.dynect.net
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = ns2.p29.dynect.net
+
+++ns3
+
+host = ns3.p29.dynect.net
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = ns3.p29.dynect.net
+
+++ns4
+
+host = ns4.p29.dynect.net
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = ns4.p29.dynect.net
+
++Sites
+menu = Sites and Servers
+title = Sites and Servers
+
+probe = DNS
+
+++AMS
+menu=AMS
+title=AMS
+
++++dns4-01-ams
+host = dns4-01-ams.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-01-ams.dyndns.com
+
++++dns4-02-ams
+host = dns4-02-ams.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-02-ams.dyndns.com
+
++++dns4-03-ams
+host = dns4-03-ams.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-03-ams.dyndns.com
+
++++dns4-04-ams
+host = dns4-04-ams.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-04-ams.dyndns.com
+
+++BOM
+menu=BOM
+title=BOM
+
++++dns4-01-bom
+host = dns4-01-bom.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-01-bom.dyndns.com
+
++++dns4-02-bom
+host = dns4-02-bom.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-02-bom.dyndns.com
+
++++dns4-03-bom
+host = dns4-03-bom.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-03-bom.dyndns.com
+
++++dns4-04-bom
+host = dns4-04-bom.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-04-bom.dyndns.com
+
+
+++DFW
+menu=DFW
+title=DFW
+
++++dns4-01-dfw
+host = dns4-01-dfw.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-01-dfw.dyndns.com
+
++++dns4-02-dfw
+host = dns4-02-dfw.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-02-dfw.dyndns.com
+
++++dns4-03-dfw
+host = dns4-03-dfw.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-03-dfw.dyndns.com
+
++++dns4-04-dfw
+host = dns4-04-dfw.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-04-dfw.dyndns.com
+
+
+++EWR
+menu=EWR
+title=EWR
+
++++dns4-01-ewr
+host = dns4-01-ewr.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-01-ewr.dyndns.com
+
++++dns4-02-ewr
+host = dns4-02-ewr.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-02-ewr.dyndns.com
+
++++dns4-03-ewr
+host = dns4-03-ewr.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-03-ewr.dyndns.com
+
++++dns4-04-ewr
+host = dns4-04-ewr.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-04-ewr.dyndns.com
+
+++FRA
+menu=FRA
+title=FRA
+
++++dns4-01-fra
+host = dns4-01-fra.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-01-fra.dyndns.com
+
++++dns4-02-fra
+host = dns4-02-fra.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-02-fra.dyndns.com
+
++++dns4-03-fra
+host = dns4-03-fra.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-03-fra.dyndns.com
+
++++dns4-04-fra
+host = dns4-04-fra.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-04-fra.dyndns.com
+
+++HKG
+menu=HKG
+title=HKG
+
++++dns4-01-hkg
+host = dns4-01-hkg.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-01-hkg.dyndns.com
+
++++dns4-02-hkg
+host = dns4-02-hkg.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-02-hkg.dyndns.com
+
++++dns4-03-hkg
+host = dns4-03-hkg.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-03-hkg.dyndns.com
+
++++dns4-04-hkg
+host = dns4-04-hkg.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-04-hkg.dyndns.com
+
+
+++IAD
+menu=IAD
+title=IAD
+
++++dns4-01-iad
+host = dns4-01-iad.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-01-iad.dyndns.com
+
++++dns4-02-iad
+host = dns4-02-iad.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-02-iad.dyndns.com
+
++++dns4-03-iad
+host = dns4-03-iad.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-03-iad.dyndns.com
+
++++dns4-04-iad
+host = dns4-04-iad.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-04-iad.dyndns.com
+
+
+++LAX
+menu=LAX
+title=LAX
+
++++dns4-01-lax
+host = dns4-01-lax.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-01-lax.dyndns.com
+
++++dns4-02-lax
+host = dns4-02-lax.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-02-lax.dyndns.com
+
++++dns4-03-lax
+host = dns4-03-lax.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-03-lax.dyndns.com
+
++++dns4-04-lax
+host = dns4-04-lax.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-04-lax.dyndns.com
+
+
+++MIA
+menu=MIA
+title=MIA
+
++++dns4-01-mia
+host = dns4-01-mia.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-01-mia.dyndns.com
+
++++dns4-02-mia
+host = dns4-02-mia.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-02-mia.dyndns.com
+
++++dns4-03-mia
+host = dns4-03-mia.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-03-mia.dyndns.com
+
++++dns4-04-mia
+host = dns4-04-mia.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-04-mia.dyndns.com
+
+++WAW
+menu=WAW
+title=WAW
+
++++dns4-01-waw
+host = dns4-01-waw.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-01-waw.dyndns.com
+
++++dns4-02-waw
+host = dns4-02-waw.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-02-waw.dyndns.com
+
++++dns4-03-waw
+host = dns4-03-waw.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-03-waw.dyndns.com
+
++++dns4-04-waw
+host = dns4-04-waw.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-04-waw.dyndns.com
+
+++TYO
+menu=TYO
+title=TYO
+
++++dns4-01-tyo
+host = dns4-01-tyo.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-01-tyo.dyndns.com
+
++++dns4-02-tyo
+host = dns4-02-tyo.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-02-tyo.dyndns.com
+
++++dns4-03-tyo
+host = dns4-03-tyo.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-03-tyo.dyndns.com
+
++++dns4-04-tyo
+host = dns4-04-tyo.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-04-tyo.dyndns.com
+
+++SYD
+menu=SYD
+title=SYD
+
++++dns4-01-syd
+host = dns4-01-syd.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-01-syd.dyndns.com
+
++++dns4-02-syd
+host = dns4-02-syd.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-02-syd.dyndns.com
+
++++dns4-03-syd
+host = dns4-03-syd.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-03-syd.dyndns.com
+
++++dns4-04-syd
+host = dns4-04-syd.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-04-syd.dyndns.com
+
+++SIN
+menu=SIN
+title=SIN
+
++++dns4-01-sin
+host = dns4-01-sin.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-01-sin.dyndns.com
+
++++dns4-02-sin
+host = dns4-02-sin.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-02-sin.dyndns.com
+
++++dns4-03-sin
+host = dns4-03-sin.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-03-sin.dyndns.com
+
++++dns4-04-sin
+host = dns4-04-sin.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-04-sin.dyndns.com
+
+++SEA
+menu=SEA
+title=SEA
+
++++dns4-01-sea
+host = dns4-01-sea.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-01-sea.dyndns.com
+
++++dns4-02-sea
+host = dns4-02-sea.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-02-sea.dyndns.com
+
++++dns4-03-sea
+host = dns4-03-sea.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-03-sea.dyndns.com
+
++++dns4-04-sea
+host = dns4-04-sea.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-04-sea.dyndns.com
+
+++SAO
+menu=SAO
+title=SAO
+
++++dns4-01-sao
+host = dns4-01-sao.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-01-sao.dyndns.com
+
++++dns4-02-sao
+host = dns4-02-sao.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-02-sao.dyndns.com
+
++++dns4-03-sao
+host = dns4-03-sao.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-03-sao.dyndns.com
+
++++dns4-04-sao
+host = dns4-04-sao.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-04-sao.dyndns.com
+
+++PAO
+menu=PAO
+title=PAO
+
++++dns4-01-pao
+host = dns4-01-pao.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-01-pao.dyndns.com
+
++++dns4-02-pao
+host = dns4-02-pao.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-02-pao.dyndns.com
+
++++dns4-03-pao
+host = dns4-03-pao.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-03-pao.dyndns.com
+
++++dns4-04-pao
+host = dns4-04-pao.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-04-pao.dyndns.com
+
+++ORD
+menu=ORD
+title=ORD
+
++++dns4-01-ord
+host = dns4-01-ord.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-01-ord.dyndns.com
+
++++dns4-02-ord
+host = dns4-02-ord.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-02-ord.dyndns.com
+
++++dns4-03-ord
+host = dns4-03-ord.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-03-ord.dyndns.com
+
++++dns4-04-ord
+host = dns4-04-ord.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-04-ord.dyndns.com
+
+++LON
+menu=LON
+title=LON
+
++++dns4-01-lon
+host = dns4-01-lon.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-01-lon.dyndns.com
+
++++dns4-02-lon
+host = dns4-02-lon.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-02-lon.dyndns.com
+
++++dns4-03-lon
+host = dns4-03-lon.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-03-lon.dyndns.com
+
++++dns4-04-lon
+host = dns4-04-lon.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+server = dns4-04-lon.dyndns.com
+
++Route53
+menu=Route53
+title=Route53
+
+probe = DNS
+
+++ns-1432
+host = ns-1432.awsdns-51.org
+lookup = route53-demo.com
+pings = 5
+server = 205.251.197.152
+
+++ns-1545
+host = ns-1545.awsdns-01.co.uk
+lookup = route53-demo.com
+pings = 5
+server = 205.251.198.9
+
+
+++ns-192
+host = ns-192.awsdns-24.com
+lookup = route53-demo.com
+pings = 5
+server = 205.251.192.192
+
+++ns-821
+host = ns-821.awsdns-38.net 
+lookup = route53-demo.com
+pings = 5
+server = 205.251.195.53
+
++Edgecast
+menu=Edgecast
+title=Edgecast
+ 
+probe = DNS
+ 
+++ns-1
+host =  ns1.edgecastdns.net
+lookup = wauwaa.com
+pings = 5
+server = 192.16.16.5
+
+++ns-2
+host =  ns2.edgecastdns.net
+lookup = wauwaa.com
+pings = 5
+server = 192.16.16.6
+
+++ns-3
+host =  ns3.edgecastdns.net
+lookup = wauwaa.com
+pings = 5
+server = 198.7.29.5
+
+++ns-4
+host =  ns4.edgecastdns.net
+lookup = wauwaa.com
+pings = 5
+server = 198.7.29.6
+
+
+
++Root
+menu=Root
+title=Root
+
+probe = DNS
+
+++a-root
+host = a.root-servers.net 
+lookup = hostname.bind
+pings = 5
+server = a.root-servers.net
+
+++b-root
+host = b.root-servers.net 
+lookup = hostname.bind
+pings = 5
+server = b.root-servers.net
+
+++c-root
+host = c.root-servers.net 
+lookup = hostname.bind
+pings = 5
+server = c.root-servers.net
+
+++d-root
+host = d.root-servers.net 
+lookup = hostname.bind
+pings = 5
+server = d.root-servers.net
+
+++e-root
+host = e.root-servers.net 
+lookup = hostname.bind
+pings = 5
+server = e.root-servers.net
+
+++f-root
+host = f.root-servers.net 
+lookup = hostname.bind
+pings = 5
+server = f.root-servers.net
+
+++g-root
+host = g.root-servers.net 
+lookup = hostname.bind
+pings = 5
+server = g.root-servers.net
+
+++h-root
+host = h.root-servers.net 
+lookup = hostname.bind
+pings = 5
+server = h.root-servers.net
+
+++i-root
+host = i.root-servers.net 
+lookup = hostname.bind
+pings = 5
+server = i.root-servers.net
+
+++j-root
+host = j.root-servers.net 
+lookup = hostname.bind
+pings = 5
+server = j.root-servers.net
+
+++k-root
+host = k.root-servers.net 
+lookup = hostname.bind
+pings = 5
+server = k.root-servers.net
+
+++l-root
+host = l.root-servers.net 
+lookup = hostname.bind
+pings = 5
+server = l.root-servers.net
+
+++m-root
+host = m.root-servers.net 
+lookup = hostname.bind
+pings = 5
+server = m.root-servers.net
+
+
+
+
++TLD
+menu=TLD
+title=TLD
+
+probe = DNS
+
+++a-gtld
+host = a.gtld-servers.net
+lookup = hostname.bind
+pings = 5
+server = a.gtld-servers.net 
+
+++b-gtld
+host = b.gtld-servers.net
+lookup = hostname.bind
+pings = 5
+server = b.gtld-servers.net 
+
+++c-gtld
+host = c.gtld-servers.net
+lookup = hostname.bind
+pings = 5
+server = c.gtld-servers.net 
+
+++d-gtld
+host = d.gtld-servers.net
+lookup = hostname.bind
+pings = 5
+server = d.gtld-servers.net 
+
+++e-gtld
+host = e.gtld-servers.net
+lookup = hostname.bind
+pings = 5
+server = e.gtld-servers.net 
+
+++f-gtld
+host = f.gtld-servers.net
+lookup = hostname.bind
+pings = 5
+server = f.gtld-servers.net 
+
+++g-gtld
+host = g.gtld-servers.net
+lookup = hostname.bind
+pings = 5
+server = g.gtld-servers.net 
+
+++h-gtld
+host = h.gtld-servers.net
+lookup = hostname.bind
+pings = 5
+server = h.gtld-servers.net 
+
+++i-gtld
+host = i.gtld-servers.net
+lookup = hostname.bind
+pings = 5
+server = i.gtld-servers.net 
+
+++j-gtld
+host = j.gtld-servers.net
+lookup = hostname.bind
+pings = 5
+server = j.gtld-servers.net 
+
+++k-gtld
+host = k.gtld-servers.net
+lookup = hostname.bind
+pings = 5
+server = k.gtld-servers.net 
+
+++l-gtld
+host = l.gtld-servers.net
+lookup = hostname.bind
+pings = 5
+server = l.gtld-servers.net 
+
+++m-gtld
+host = m.gtld-servers.net
+lookup = hostname.bind
+pings = 5
+server = m.gtld-servers.net 
+
