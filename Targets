@@ -7,15 +7,6 @@ title = Network Latency Grapher
 remark = Go Away. You are not authorized.
 
 
-+Local-DNS
-menu = Local DNS 
-title = DNS Performance
-
-probe = DNS
-host = pi.bigg33k.net
-#lookup = pi.bigg33k.net
-pings = 5
-server = 192.168.1.91
 
 +Remote-DNS
 menu = Remote DNS 
