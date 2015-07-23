@@ -7,11 +7,13 @@ title = Network Latency Grapher
 remark = Go Away. You are not authorized.
 
 
+
 +HTTP
 menu = HTTP latency
 title = Service latency (HTTP)
 
-++ www-pi
+probe = EchoPingHttp
+++ www
 host = www.bigg33k.net
 
 
