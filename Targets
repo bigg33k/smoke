@@ -7,6 +7,13 @@ title = Network Latency Grapher
 remark = Go Away. You are not authorized.
 
 
++HTTP
+menu = HTTP latency
+title = Service latency (HTTP)
+
+++ www-pi
+host = www.bigg33k.net
+
 
 +Remote-DNS
 menu = Remote DNS 
