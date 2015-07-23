@@ -1,0 +1,32 @@
+*** Probes ***
+
++ FPing
+
+binary = /usr/bin/fping
+
++DNS
+
+binary = /usr/bin/dig
+lookup = pi.bigg33k.net
+pings = 5
+server = 192.168.1.91
+
++EchoPingHttp
+pings = 5
+url = pi.bigg33k.net
+
+
+#+SendEmail
+
+#bodysize = 300
+#forks = 5
+#from = test@droplet.bigg33k.net# mandatory
+#offset = 50%
+#step = 300
+#subject = Test
+#timeout = 15
+#to = recv@droplet.bigg33k.net # mandatory
+
+# The following variables can be overridden in each target section
+#pings = 5
+#port = 25
