@@ -11,9 +11,12 @@ lookup = pi.bigg33k.net
 pings = 5
 server = 192.168.1.91
 
-+EchoPingHttp
-pings = 5
-url = pi.bigg33k.net
++EchoPingHttp 
+binary = /usr/bin/echoping
+forks = 5
+offset = 50%
+step = 300
+
 
 
 #+SendEmail
