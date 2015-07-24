@@ -16,6 +16,9 @@ probe = EchoPingHttp
 ++ www
 host = www.bigg33k.net
 
+++ SalesForce
+probe = EchoPingHttps
+host = na19.salesforce.com
 
 +Remote-DNS
 menu = Remote DNS 
