@@ -17,6 +17,14 @@ forks = 5
 offset = 50%
 step = 300
 
++EchoPingHttps
+binary = /usr/bin/echoping
+forks = 5
+offset = 50%
+step = 300
+
+
+
 
 
 #+SendEmail
