@@ -1,0 +1,21 @@
+*** Slaves ***
+secrets=/etc/smokeping/smokeping_secrets
++pi3
+display_name=pi3
+color=00ffff
+
++do1
+display_name=do1
+color=ffff00
+
++do2
+display_name=do2
+color=00ff00
+
++ip-172-31-6-131
+display_name=awsw
+color=ccff00
+
++aww
+display_name=awse
+color=ccffcc
