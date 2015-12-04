@@ -15,10 +15,12 @@ title = Service latency (HTTP)
 probe = EchoPingHttp
 ++ www
 host = www.bigg33k.net
+slaves =  do2 do1 ip-172-31-6-131
 
 ++ SalesForce
 probe = EchoPingHttps
 host = na19.salesforce.com
+slaves =  do2 do1 ip-172-31-6-131
 
 +Remote-DNS
 menu = Remote DNS 
@@ -32,6 +34,7 @@ host = ns1147.dns.dyn.com
 lookup = pi.bigg33k.net
 pings = 5
 server = ns1147.dns.dyn.com
+slaves =  do2 do1 ip-172-31-6-131
 
 ++ns3152
 
@@ -39,13 +42,14 @@ host =  ns3152.dns.dyn.com
 lookup = pi.bigg33k.net
 pings = 5
 server = ns3152.dns.dyn.com
-
+slaves =  do2 do1 ip-172-31-6-131
 ++ns2162
 
 host = ns2162.dns.dyn.com
 lookup = pi.bigg33k.net
 pings = 5
 server = ns2162.dns.dyn.com
+slaves =  do2 do1 ip-172-31-6-131
 
 ++ns4149
 
@@ -53,6 +57,7 @@ host = ns4149.dns.dyn.com
 lookup = pi.bigg33k.net
 pings = 5
 server = ns4149.dns.dyn.com
+slaves =  do2 do1 ip-172-31-6-131
 
 +TrafficMgtDNS
 menu = Managed DNS 
@@ -66,25 +71,28 @@ probe = DNS
 host = ns1.p29.dynect.net
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 ++ns2
 
 host = ns2.p29.dynect.net
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 ++ns3
 
 host = ns3.p29.dynect.net
 lookup = pi.geo.bigg33k.net
 pings = 5
-
+slaves =  do2 do1 ip-172-31-6-131
 
 ++ns4
 
 host = ns4.p29.dynect.net
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 
 +Bulk_Hosting
@@ -97,6 +105,7 @@ probe = DNS
 host = hctest-blue-ns.myriad.dyndns.com
 lookup = always-present-in-myriad.dummy.dynguts.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +Sites
 menu = Sites
@@ -112,32 +121,37 @@ title=AMS
 host = dns4-07-ams.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-08-ams
 host = dns4-08-ams.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-09-ams
 host = dns4-09-ams.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-10-ams
 host = dns4-10-ams.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-11-ams
 host = dns4-11-ams.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-12-ams
 host = dns4-12-ams.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-
+slaves =  do2 do1 ip-172-31-6-131
 
 
 ++BOM
@@ -145,22 +159,23 @@ menu=BOM
 title=BOM
 
 
-
 +++dns4-02-bom
 host = dns4-02-bom.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-03-bom
 host = dns4-03-bom.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-04-bom
 host = dns4-04-bom.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-
+slaves =  do2 do1 ip-172-31-6-131
 
 
 ++DFW
@@ -171,21 +186,25 @@ title=DFW
 host = dns4-05-dfw.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-06-dfw
 host = dns4-06-dfw.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-07-dfw
 host = dns4-07-dfw.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-08-dfw
 host = dns4-08-dfw.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 
 ++EWR
@@ -196,21 +215,25 @@ title=EWR
 host = dns4-05-ewr.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-06-ewr
 host = dns4-06-ewr.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-07-ewr
 host = dns4-07-ewr.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-08-ewr
 host = dns4-08-ewr.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 
 ++FRA
@@ -221,32 +244,37 @@ title=FRA
 host = dns4-07-fra.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-08-fra
 host = dns4-08-fra.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-09-fra
 host = dns4-09-fra.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-10-fra
 host = dns4-10-fra.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-11-fra
 host = dns4-11-fra.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-12-fra
 host = dns4-12-fra.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-
+slaves =  do2 do1 ip-172-31-6-131
 
 
 ++HKG
@@ -257,21 +285,25 @@ title=HKG
 host = dns4-05-hkg.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-06-hkg
 host = dns4-06-hkg.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-07-hkg
 host = dns4-07-hkg.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-08-hkg
 host = dns4-08-hkg.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 
 
@@ -279,36 +311,42 @@ pings = 5
 menu=IAD
 title=IAD
 
+
 +++dns4-07-iad
 host = dns4-07-iad.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-08-iad
 host = dns4-08-iad.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-09-iad
 host = dns4-09-iad.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-10-iad
 host = dns4-10-iad.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-11-iad
 host = dns4-11-iad.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-12-iad
 host = dns4-12-iad.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-
+slaves =  do2 do1 ip-172-31-6-131
 
 
 
@@ -320,32 +358,37 @@ title=LAX
 host = dns4-07-lax.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-08-lax
 host = dns4-08-lax.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-09-lax
 host = dns4-09-lax.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-10-lax
 host = dns4-10-lax.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-11-lax
 host = dns4-11-lax.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-12-lax
 host = dns4-12-lax.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-
+slaves =  do2 do1 ip-172-31-6-131
 
 ++LON
 menu=LON
@@ -355,22 +398,25 @@ title=LON
 host = dns4-05-lon.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-06-lon
 host = dns4-06-lon.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-07-lon
 host = dns4-07-lon.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-08-lon
 host = dns4-08-lon.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-
+slaves =  do2 do1 ip-172-31-6-131
 
 
 
@@ -382,12 +428,13 @@ title=MIA
 host = dns4-03-mia.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-04-mia
 host = dns4-02-mia.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-
+slaves =  do2 do1 ip-172-31-6-131
 
 ++ORD
 menu=ORD
@@ -397,21 +444,25 @@ title=ORD
 host = dns4-05-ord.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-06-ord
 host = dns4-06-ord.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-07-ord
 host = dns4-07-ord.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-08-ord
 host = dns4-08-ord.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 
 
@@ -424,21 +475,25 @@ title=PAO
 host = dns4-05-pao.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-06-pao
 host = dns4-06-pao.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-07-pao
 host = dns4-07-pao.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-08-pao
 host = dns4-08-pao.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 
 
@@ -450,16 +505,19 @@ title=SAO
 host = dns4-02-sao.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-03-sao
 host = dns4-03-sao.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-04-sao
 host = dns4-04-sao.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 
 
@@ -471,11 +529,13 @@ title=SEA
 host = dns4-03-sea.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-04-sea
 host = dns4-04-sea.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 
 ++SIN
@@ -486,11 +546,13 @@ title=SIN
 host = dns4-03-sin.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-04-sin
 host = dns4-04-sin.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 
 ++SYD
@@ -501,11 +563,13 @@ title=SYD
 host = dns4-01-syd.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-02-syd
 host = dns4-02-syd.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 
 ++TYO
@@ -516,21 +580,25 @@ title=TYO
 host = dns4-05-tyo.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-06-tyo
 host = dns4-06-tyo.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-07-tyo
 host = dns4-07-tyo.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-08-tyo
 host = dns4-08-tyo.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 
 ++WAW
@@ -541,16 +609,19 @@ title=WAW
 host = dns4-02-waw.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-03-waw
 host = dns4-03-waw.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +++dns4-04-waw
 host = dns4-04-waw.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 +Route53
 menu=Route53
@@ -563,12 +634,14 @@ host = ns-1432.awsdns-51.org
 lookup = route53-demo.com
 pings = 5
 server = 205.251.197.152
+slaves =  do2 do1 ip-172-31-6-131
 
 ++ns-1545
 host = ns-1545.awsdns-01.co.uk
 lookup = route53-demo.com
 pings = 5
 server = 205.251.198.9
+slaves =  do2 do1 ip-172-31-6-131
 
 
 ++ns-192
@@ -576,12 +649,14 @@ host = ns-192.awsdns-24.com
 lookup = route53-demo.com
 pings = 5
 server = 205.251.192.192
+slaves =  do2 do1 ip-172-31-6-131
 
 ++ns-821
 host = ns-821.awsdns-38.net 
 lookup = route53-demo.com
 pings = 5
 server = 205.251.195.53
+slaves =  do2 do1 ip-172-31-6-131
 
 +Edgecast
 menu=Edgecast
@@ -594,24 +669,28 @@ host =  ns1.edgecastdns.net
 lookup = wauwaa.com
 pings = 5
 server = 192.16.16.5
+slaves =  do2 do1 ip-172-31-6-131
 
 ++ns-2
 host =  ns2.edgecastdns.net
 lookup = wauwaa.com
 pings = 5
 server = 192.16.16.6
+slaves =  do2 do1 ip-172-31-6-131
 
 ++ns-3
 host =  ns3.edgecastdns.net
 lookup = wauwaa.com
 pings = 5
 server = 198.7.29.5
+slaves =  do2 do1 ip-172-31-6-131
 
 ++ns-4
 host =  ns4.edgecastdns.net
 lookup = wauwaa.com
 pings = 5
 server = 198.7.29.6
+slaves =  do2 do1 ip-172-31-6-131
 
 
 
@@ -626,78 +705,91 @@ host = a.root-servers.net
 lookup = hostname.bind
 pings = 5
 server = a.root-servers.net
+slaves =  do2 do1 ip-172-31-6-131
 
 ++b-root
 host = b.root-servers.net 
 lookup = hostname.bind
 pings = 5
 server = b.root-servers.net
+slaves =  do2 do1 ip-172-31-6-131
 
 ++c-root
 host = c.root-servers.net 
 lookup = hostname.bind
 pings = 5
 server = c.root-servers.net
+slaves =  do2 do1 ip-172-31-6-131
 
 ++d-root
 host = d.root-servers.net 
 lookup = hostname.bind
 pings = 5
 server = d.root-servers.net
+slaves =  do2 do1 ip-172-31-6-131
 
 ++e-root
 host = e.root-servers.net 
 lookup = hostname.bind
 pings = 5
 server = e.root-servers.net
+slaves =  do2 do1 ip-172-31-6-131
 
 ++f-root
 host = f.root-servers.net 
 lookup = hostname.bind
 pings = 5
 server = f.root-servers.net
+slaves =  do2 do1 ip-172-31-6-131
 
 ++g-root
 host = g.root-servers.net 
 lookup = hostname.bind
 pings = 5
 server = g.root-servers.net
+slaves =  do2 do1 ip-172-31-6-131
 
 ++h-root
 host = h.root-servers.net 
 lookup = hostname.bind
 pings = 5
 server = h.root-servers.net
+slaves =  do2 do1 ip-172-31-6-131
 
 ++i-root
 host = i.root-servers.net 
 lookup = hostname.bind
 pings = 5
 server = i.root-servers.net
+slaves =  do2 do1 ip-172-31-6-131
 
 ++j-root
 host = j.root-servers.net 
 lookup = hostname.bind
 pings = 5
 server = j.root-servers.net
+slaves =  do2 do1 ip-172-31-6-131
 
 ++k-root
 host = k.root-servers.net 
 lookup = hostname.bind
 pings = 5
 server = k.root-servers.net
+slaves =  do2 do1 ip-172-31-6-131
 
 ++l-root
 host = l.root-servers.net 
 lookup = hostname.bind
 pings = 5
 server = l.root-servers.net
+slaves =  do2 do1 ip-172-31-6-131
 
 ++m-root
 host = m.root-servers.net 
 lookup = hostname.bind
 pings = 5
 server = m.root-servers.net
+slaves =  do2 do1 ip-172-31-6-131
 
 
 
@@ -713,86 +805,100 @@ host = a.gtld-servers.net
 lookup = hostname.bind
 pings = 5
 server = a.gtld-servers.net 
+slaves =  do2 do1 ip-172-31-6-131
 
 ++b-gtld
 host = b.gtld-servers.net
 lookup = hostname.bind
 pings = 5
 server = b.gtld-servers.net 
+slaves =  do2 do1 ip-172-31-6-131
 
 ++c-gtld
 host = c.gtld-servers.net
 lookup = hostname.bind
 pings = 5
 server = c.gtld-servers.net 
+slaves =  do2 do1 ip-172-31-6-131
 
 ++d-gtld
 host = d.gtld-servers.net
 lookup = hostname.bind
 pings = 5
 server = d.gtld-servers.net 
+slaves =  do2 do1 ip-172-31-6-131
 
 ++e-gtld
 host = e.gtld-servers.net
 lookup = hostname.bind
 pings = 5
 server = e.gtld-servers.net 
+slaves =  do2 do1 ip-172-31-6-131
 
 ++f-gtld
 host = f.gtld-servers.net
 lookup = hostname.bind
 pings = 5
 server = f.gtld-servers.net 
+slaves =  do2 do1 ip-172-31-6-131
 
 ++g-gtld
 host = g.gtld-servers.net
 lookup = hostname.bind
 pings = 5
 server = g.gtld-servers.net 
+slaves =  do2 do1 ip-172-31-6-131
 
 ++h-gtld
 host = h.gtld-servers.net
 lookup = hostname.bind
 pings = 5
 server = h.gtld-servers.net 
+slaves =  do2 do1 ip-172-31-6-131
 
 ++i-gtld
 host = i.gtld-servers.net
 lookup = hostname.bind
 pings = 5
 server = i.gtld-servers.net 
+slaves =  do2 do1 ip-172-31-6-131
 
 ++j-gtld
 host = j.gtld-servers.net
 lookup = hostname.bind
 pings = 5
 server = j.gtld-servers.net 
+slaves =  do2 do1 ip-172-31-6-131
 
 ++k-gtld
 host = k.gtld-servers.net
 lookup = hostname.bind
 pings = 5
 server = k.gtld-servers.net 
+slaves =  do2 do1 ip-172-31-6-131
 
 ++l-gtld
 host = l.gtld-servers.net
 lookup = hostname.bind
 pings = 5
 server = l.gtld-servers.net 
+slaves =  do2 do1 ip-172-31-6-131
 
 ++m-gtld
 host = m.gtld-servers.net
 lookup = hostname.bind
 pings = 5
 server = m.gtld-servers.net 
+slaves =  do2 do1 ip-172-31-6-131
 
 ++E_NS_IE
 host = e.ns.ie
 lookup = ns.ie
 pings = 5
+slaves =  do2 do1 ip-172-31-6-131
 
 ++F_NS_IE
 host = f.ns.ie
 lookup = ns.ie
 pings = 5
-
+slaves =  do2 do1 ip-172-31-6-131
