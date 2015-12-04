@@ -60,37 +60,47 @@ title = DNS Performance
 
 probe = DNS
 
+
 ++ns1
 
 host = ns1.p29.dynect.net
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = ns1.p29.dynect.net
 
 ++ns2
 
 host = ns2.p29.dynect.net
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = ns2.p29.dynect.net
 
 ++ns3
 
 host = ns3.p29.dynect.net
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = ns3.p29.dynect.net
+
 
 ++ns4
 
 host = ns4.p29.dynect.net
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = ns4.p29.dynect.net
+
+
++Bulk_Hosting
+menu = Bulk Hosting
+title = Hivecast Test
+
+probe = DNS
+
+++hctest 
+host = hctest-blue-ns.myriad.dyndns.com
+lookup = always-present-in-myriad.dummy.dynguts.net
+pings = 5
 
 +Sites
-menu = Sites and Servers
-title = Sites and Servers
+menu = Sites
+title = Sites 
 
 probe = DNS
 
@@ -98,229 +108,270 @@ probe = DNS
 menu=AMS
 title=AMS
 
-+++dns4-01-ams
-host = dns4-01-ams.dyndns.com
++++dns4-07-ams
+host = dns4-07-ams.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-01-ams.dyndns.com
 
-+++dns4-02-ams
-host = dns4-02-ams.dyndns.com
++++dns4-08-ams
+host = dns4-08-ams.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-02-ams.dyndns.com
 
-+++dns4-03-ams
-host = dns4-03-ams.dyndns.com
++++dns4-09-ams
+host = dns4-09-ams.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-03-ams.dyndns.com
 
-+++dns4-04-ams
-host = dns4-04-ams.dyndns.com
++++dns4-10-ams
+host = dns4-10-ams.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-04-ams.dyndns.com
+
++++dns4-11-ams
+host = dns4-11-ams.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
++++dns4-12-ams
+host = dns4-12-ams.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
+
 
 ++BOM
 menu=BOM
 title=BOM
 
-+++dns4-01-bom
-host = dns4-01-bom.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-01-bom.dyndns.com
+
 
 +++dns4-02-bom
 host = dns4-02-bom.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-02-bom.dyndns.com
 
 +++dns4-03-bom
 host = dns4-03-bom.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-03-bom.dyndns.com
 
 +++dns4-04-bom
 host = dns4-04-bom.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-04-bom.dyndns.com
+
 
 
 ++DFW
 menu=DFW
 title=DFW
 
-+++dns4-01-dfw
-host = dns4-01-dfw.dyndns.com
++++dns4-05-dfw
+host = dns4-05-dfw.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-01-dfw.dyndns.com
 
-+++dns4-02-dfw
-host = dns4-02-dfw.dyndns.com
++++dns4-06-dfw
+host = dns4-06-dfw.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-02-dfw.dyndns.com
 
-+++dns4-03-dfw
-host = dns4-03-dfw.dyndns.com
++++dns4-07-dfw
+host = dns4-07-dfw.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-03-dfw.dyndns.com
 
-+++dns4-04-dfw
-host = dns4-04-dfw.dyndns.com
++++dns4-08-dfw
+host = dns4-08-dfw.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-04-dfw.dyndns.com
 
 
 ++EWR
 menu=EWR
 title=EWR
 
-+++dns4-01-ewr
-host = dns4-01-ewr.dyndns.com
++++dns4-05-ewr
+host = dns4-05-ewr.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-01-ewr.dyndns.com
 
-+++dns4-02-ewr
-host = dns4-02-ewr.dyndns.com
++++dns4-06-ewr
+host = dns4-06-ewr.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-02-ewr.dyndns.com
 
-+++dns4-03-ewr
-host = dns4-03-ewr.dyndns.com
++++dns4-07-ewr
+host = dns4-07-ewr.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-03-ewr.dyndns.com
 
-+++dns4-04-ewr
-host = dns4-04-ewr.dyndns.com
++++dns4-08-ewr
+host = dns4-08-ewr.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-04-ewr.dyndns.com
+
 
 ++FRA
 menu=FRA
 title=FRA
 
-+++dns4-01-fra
-host = dns4-01-fra.dyndns.com
++++dns4-07-fra
+host = dns4-07-fra.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-01-fra.dyndns.com
 
-+++dns4-02-fra
-host = dns4-02-fra.dyndns.com
++++dns4-08-fra
+host = dns4-08-fra.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-02-fra.dyndns.com
 
-+++dns4-03-fra
-host = dns4-03-fra.dyndns.com
++++dns4-09-fra
+host = dns4-09-fra.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-03-fra.dyndns.com
 
-+++dns4-04-fra
-host = dns4-04-fra.dyndns.com
++++dns4-10-fra
+host = dns4-10-fra.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-04-fra.dyndns.com
+
++++dns4-11-fra
+host = dns4-11-fra.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
++++dns4-12-fra
+host = dns4-12-fra.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
+
 
 ++HKG
 menu=HKG
 title=HKG
 
-+++dns4-01-hkg
-host = dns4-01-hkg.dyndns.com
++++dns4-05-hkg
+host = dns4-05-hkg.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-01-hkg.dyndns.com
 
-+++dns4-02-hkg
-host = dns4-02-hkg.dyndns.com
++++dns4-06-hkg
+host = dns4-06-hkg.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-02-hkg.dyndns.com
 
-+++dns4-03-hkg
-host = dns4-03-hkg.dyndns.com
++++dns4-07-hkg
+host = dns4-07-hkg.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-03-hkg.dyndns.com
 
-+++dns4-04-hkg
-host = dns4-04-hkg.dyndns.com
++++dns4-08-hkg
+host = dns4-08-hkg.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-04-hkg.dyndns.com
+
 
 
 ++IAD
 menu=IAD
 title=IAD
 
-+++dns4-01-iad
-host = dns4-01-iad.dyndns.com
++++dns4-07-iad
+host = dns4-07-iad.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-01-iad.dyndns.com
 
-+++dns4-02-iad
-host = dns4-02-iad.dyndns.com
++++dns4-08-iad
+host = dns4-08-iad.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-02-iad.dyndns.com
 
-+++dns4-03-iad
-host = dns4-03-iad.dyndns.com
++++dns4-09-iad
+host = dns4-09-iad.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-03-iad.dyndns.com
 
-+++dns4-04-iad
-host = dns4-04-iad.dyndns.com
++++dns4-10-iad
+host = dns4-10-iad.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-04-iad.dyndns.com
+
++++dns4-11-iad
+host = dns4-11-iad.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
++++dns4-12-iad
+host = dns4-12-iad.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
+
 
 
 ++LAX
 menu=LAX
 title=LAX
 
-+++dns4-01-lax
-host = dns4-01-lax.dyndns.com
++++dns4-07-lax
+host = dns4-07-lax.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-01-lax.dyndns.com
 
-+++dns4-02-lax
-host = dns4-02-lax.dyndns.com
++++dns4-08-lax
+host = dns4-08-lax.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-02-lax.dyndns.com
 
-+++dns4-03-lax
-host = dns4-03-lax.dyndns.com
++++dns4-09-lax
+host = dns4-09-lax.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-03-lax.dyndns.com
 
-+++dns4-04-lax
-host = dns4-04-lax.dyndns.com
++++dns4-10-lax
+host = dns4-10-lax.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-04-lax.dyndns.com
+
++++dns4-11-lax
+host = dns4-11-lax.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
++++dns4-12-lax
+host = dns4-12-lax.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
+
+++LON
+menu=LON
+title=LON
+
++++dns4-05-lon
+host = dns4-05-lon.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
++++dns4-06-lon
+host = dns4-06-lon.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
++++dns4-07-lon
+host = dns4-07-lon.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
++++dns4-08-lon
+host = dns4-08-lon.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
+
 
 
 ++MIA
@@ -328,84 +379,119 @@ menu=MIA
 title=MIA
 
 +++dns4-01-mia
-host = dns4-01-mia.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-01-mia.dyndns.com
-
-+++dns4-02-mia
-host = dns4-02-mia.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-02-mia.dyndns.com
-
-+++dns4-03-mia
 host = dns4-03-mia.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-03-mia.dyndns.com
 
 +++dns4-04-mia
-host = dns4-04-mia.dyndns.com
+host = dns4-02-mia.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-04-mia.dyndns.com
 
-++WAW
-menu=WAW
-title=WAW
 
-+++dns4-01-waw
-host = dns4-01-waw.dyndns.com
+++ORD
+menu=ORD
+title=ORD
+
++++dns4-05-ord
+host = dns4-05-ord.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-01-waw.dyndns.com
 
-+++dns4-02-waw
-host = dns4-02-waw.dyndns.com
++++dns4-06-ord
+host = dns4-06-ord.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-02-waw.dyndns.com
 
-+++dns4-03-waw
-host = dns4-03-waw.dyndns.com
++++dns4-07-ord
+host = dns4-07-ord.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-03-waw.dyndns.com
 
-+++dns4-04-waw
-host = dns4-04-waw.dyndns.com
++++dns4-08-ord
+host = dns4-08-ord.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-04-waw.dyndns.com
 
-++TYO
-menu=TYO
-title=TYO
 
-+++dns4-01-tyo
-host = dns4-01-tyo.dyndns.com
+
+
+++PAO
+menu=PAO
+title=PAO
+
++++dns4-05-pao
+host = dns4-05-pao.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-01-tyo.dyndns.com
 
-+++dns4-02-tyo
-host = dns4-02-tyo.dyndns.com
++++dns4-06-pao
+host = dns4-06-pao.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-02-tyo.dyndns.com
 
-+++dns4-03-tyo
-host = dns4-03-tyo.dyndns.com
++++dns4-07-pao
+host = dns4-07-pao.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-03-tyo.dyndns.com
 
-+++dns4-04-tyo
-host = dns4-04-tyo.dyndns.com
++++dns4-08-pao
+host = dns4-08-pao.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-04-tyo.dyndns.com
+
+
+
+++SAO
+menu=SAO
+title=SAO
+
++++dns4-02-sao
+host = dns4-02-sao.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
++++dns4-03-sao
+host = dns4-03-sao.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
++++dns4-04-sao
+host = dns4-04-sao.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
+
+
+++SEA
+menu=SEA
+title=SEA
+
++++dns4-03-sea
+host = dns4-03-sea.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
++++dns4-04-sea
+host = dns4-04-sea.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
+
+++SIN
+menu=SIN
+title=SIN
+
++++dns4-03-sin
+host = dns4-03-sin.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
++++dns4-04-sin
+host = dns4-04-sin.dyndns.com
+lookup = pi.geo.bigg33k.net
+pings = 5
+
 
 ++SYD
 menu=SYD
@@ -415,193 +501,56 @@ title=SYD
 host = dns4-01-syd.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-01-syd.dyndns.com
 
 +++dns4-02-syd
 host = dns4-02-syd.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-02-syd.dyndns.com
 
-+++dns4-03-syd
-host = dns4-03-syd.dyndns.com
+
+++TYO
+menu=TYO
+title=TYO
+
++++dns4-05-tyo
+host = dns4-05-tyo.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-03-syd.dyndns.com
 
-+++dns4-04-syd
-host = dns4-04-syd.dyndns.com
++++dns4-06-tyo
+host = dns4-06-tyo.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-04-syd.dyndns.com
 
-++SIN
-menu=SIN
-title=SIN
-
-+++dns4-01-sin
-host = dns4-01-sin.dyndns.com
++++dns4-07-tyo
+host = dns4-07-tyo.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-01-sin.dyndns.com
 
-+++dns4-02-sin
-host = dns4-02-sin.dyndns.com
++++dns4-08-tyo
+host = dns4-08-tyo.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-02-sin.dyndns.com
 
-+++dns4-03-sin
-host = dns4-03-sin.dyndns.com
+
+++WAW
+menu=WAW
+title=WAW
+
++++dns4-02-waw
+host = dns4-02-waw.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-03-sin.dyndns.com
 
-+++dns4-04-sin
-host = dns4-04-sin.dyndns.com
++++dns4-03-waw
+host = dns4-03-waw.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-04-sin.dyndns.com
 
-++SEA
-menu=SEA
-title=SEA
-
-+++dns4-01-sea
-host = dns4-01-sea.dyndns.com
++++dns4-04-waw
+host = dns4-04-waw.dyndns.com
 lookup = pi.geo.bigg33k.net
 pings = 5
-server = dns4-01-sea.dyndns.com
-
-+++dns4-02-sea
-host = dns4-02-sea.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-02-sea.dyndns.com
-
-+++dns4-03-sea
-host = dns4-03-sea.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-03-sea.dyndns.com
-
-+++dns4-04-sea
-host = dns4-04-sea.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-04-sea.dyndns.com
-
-++SAO
-menu=SAO
-title=SAO
-
-+++dns4-01-sao
-host = dns4-01-sao.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-01-sao.dyndns.com
-
-+++dns4-02-sao
-host = dns4-02-sao.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-02-sao.dyndns.com
-
-+++dns4-03-sao
-host = dns4-03-sao.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-03-sao.dyndns.com
-
-+++dns4-04-sao
-host = dns4-04-sao.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-04-sao.dyndns.com
-
-++PAO
-menu=PAO
-title=PAO
-
-+++dns4-01-pao
-host = dns4-01-pao.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-01-pao.dyndns.com
-
-+++dns4-02-pao
-host = dns4-02-pao.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-02-pao.dyndns.com
-
-+++dns4-03-pao
-host = dns4-03-pao.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-03-pao.dyndns.com
-
-+++dns4-04-pao
-host = dns4-04-pao.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-04-pao.dyndns.com
-
-++ORD
-menu=ORD
-title=ORD
-
-+++dns4-01-ord
-host = dns4-01-ord.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-01-ord.dyndns.com
-
-+++dns4-02-ord
-host = dns4-02-ord.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-02-ord.dyndns.com
-
-+++dns4-03-ord
-host = dns4-03-ord.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-03-ord.dyndns.com
-
-+++dns4-04-ord
-host = dns4-04-ord.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-04-ord.dyndns.com
-
-++LON
-menu=LON
-title=LON
-
-+++dns4-01-lon
-host = dns4-01-lon.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-01-lon.dyndns.com
-
-+++dns4-02-lon
-host = dns4-02-lon.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-02-lon.dyndns.com
-
-+++dns4-03-lon
-host = dns4-03-lon.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-03-lon.dyndns.com
-
-+++dns4-04-lon
-host = dns4-04-lon.dyndns.com
-lookup = pi.geo.bigg33k.net
-pings = 5
-server = dns4-04-lon.dyndns.com
 
 +Route53
 menu=Route53
@@ -836,4 +785,14 @@ host = m.gtld-servers.net
 lookup = hostname.bind
 pings = 5
 server = m.gtld-servers.net 
+
+++E_NS_IE
+host = e.ns.ie
+lookup = ns.ie
+pings = 5
+
+++F_NS_IE
+host = f.ns.ie
+lookup = ns.ie
+pings = 5
 
